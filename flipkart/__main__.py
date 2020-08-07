@@ -20,6 +20,7 @@ from flipkart import (
     sleep_time, 
     refresh_rate
 )
+print("sleep_time: {}, refresh_rate: {}".format(sleep_time, refresh_rate))
 
 bot = telegram.Bot(token)
 def get_data():
