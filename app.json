@@ -1,0 +1,60 @@
+{
+    "name": "Flipkart product Notifier",
+    "description": "A bot that alerts you when the item that you're looking for gets back in stock",
+    "keywords": [
+      "flipkart",
+      "best",
+      "indian",
+      "bot",
+      "product",
+      "flash-sale",
+      "order",
+      "timeout",
+      "productivity",
+      "telegram",
+      "notification"
+    ],
+    "repository": "https://github.com/Jerryj1127/Flipkart-product_status",
+    "success_url": "https://telegram.dog/ThankTelegram",
+    "website": "https://github.com/Jerryj1127/Flipkart-product_status",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable webhooks when in env mode",
+        "value": "ANYTHING"
+      },
+      "token": {
+        "description": "get a token from @BotFather",
+        "value": ""
+      },
+      "url": {
+        "description": "the page link for the specific FLIPKART product",
+        "value": ""
+      },
+      "tgm_userid": {
+        "description": "get the telegram user_ID from @ShowJsonBot",
+        "value": ""
+      },
+      "sleep_time": {
+        "description": "The time for which the bot slepps after sending a message (in seconds)",
+        "value": "600",
+        "required": false
+      },
+      "refresh_rate": {
+        "description": "The interval for checking flipkart (in seconds)",
+        "value": "30",
+        "required": false
+      }
+    },
+    "addons": [
+    ],
+    "buildpacks": [{
+      "url": "heroku/python"
+    }],
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    }
+  }
+  
