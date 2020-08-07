@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 print("BOT STARTED")
 import telegram
 from requests import get
@@ -10,7 +13,13 @@ tgm_userid = 1069371548
 sleep_time = 3600
 refresh_rate = 5'''
 
-from flipkart import token, url, tgm_userid, sleep_time, refresh_rate
+from flipkart import (
+    token, 
+    url, 
+    tgm_userid, 
+    sleep_time, 
+    refresh_rate
+)
 
 bot = telegram.Bot(token)
 def get_data():
