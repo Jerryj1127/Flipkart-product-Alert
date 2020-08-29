@@ -15,7 +15,6 @@ from flipkart import (
     sleep_time, 
     refresh_rate
 )
-print("sleep_time: {}, refresh_rate: {}".format(sleep_time, refresh_rate))
 
 bot = telegram.Bot(token)
 bot.sendMessage(chat_id= tgm_userid, text = "Bot Started for website:{}".format(url))
